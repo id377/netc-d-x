@@ -1,0 +1,121 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Netflix Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 bg-black bg-opacity-75 fixed w-full z-10">
+   <div class="flex items-center space-x-4">
+    <img alt="Netflix Logo" class="h-8" height="50" src="https://storage.googleapis.com/a1aa/image/nZVTlQCC79KIDJfUOAiMM8Lc4b8HV51OwTih38OQ8yd1k34JA.jpg" width="100"/>
+    <nav class="hidden md:flex space-x-4">
+     <a class="text-white hover:text-gray-400" href="#">
+      Home
+      <body style="background-color:rgb(93, 94, 167)"></body>
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      TV Shows
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Movies
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      New &amp; Popular
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      My List
+     </a>
+    </nav>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search text-white">
+    </i>
+    <i class="fas fa-bell text-white">
+    </i>
+    <img alt="User Avatar" class="h-8 w-8 rounded-full" height="30" src="https://storage.googleapis.com/a1aa/image/UBTm2TSfFYRNS69JSD8YpmiVFWK6LWMRoNFZNpqZHZP2k34JA.jpg" width="30"/>
+   </div>
+  </header>
+  <!-- Main Content -->
+  <main class="pt-16">
+   <!-- Hero Section -->
+   <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080?text=Hero+Image&amp;bg=000&amp;fc=fff');">
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black">
+    </div>
+    <div class="absolute bottom-0 p-8">
+     <h1 class="text-5xl font-bold">
+      Featured Movie Title
+     </h1>
+     <p class="mt-4 text-lg max-w-xl">
+      A brief description of the featured movie goes here. It should be engaging and give a quick overview of the movie's plot.
+     </p>
+     <div class="mt-4">
+      <button class="bg-white text-black px-4 py-2 rounded-md font-bold mr-2">
+       <i class="fas fa-play">
+       </i>
+       Play
+      </button>
+      <button class="bg-gray-700 bg-opacity-75 text-white px-4 py-2 rounded-md font-bold">
+       <i class="fas fa-info-circle">
+       </i>
+       More Info
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Rows of Movies/Shows -->
+   <section class="p-8 space-y-8">
+    <!-- Row 1 -->
+    <div>
+     <h2 class="text-2xl font-bold mb-4">
+      Trending Now
+     </h2>
+     <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+      <img alt="Movie 1 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/Hba6teiZujUPBCxxkOLqZHg206BfjcfCVwRt04M3eVkim8GPB.jpg" width="300"/>
+      <img alt="Movie 2 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/wQQ7JEB0ESohHt3l1fBKsrNbOhRxy27Ln5wFYLSIkDBxk34JA.jpg" width="300"/>
+      <img alt="Movie 3 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/TbOezouyG41MKi1Iuwcpj3FA0DlaiTMxLqNZ0klQizRwk34JA.jpg" width="300"/>
+      <img alt="Movie 4 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/iemPfbFq4go3jU8RoyfdeifcI1Me79kfZ8POvYAd1kzhxk34JA.jpg" width="300"/>
+      <img alt="Movie 5 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/CAM86mJfCExIekfeiPRfhq1o5YC1MF1NV54EhFTcBAJZO5NeE.jpg" width="300"/>
+     </div>
+    </div>
+    <!-- Row 2 -->
+    <div>
+     <h2 class="text-2xl font-bold mb-4">
+      Top Picks for You
+     </h2>
+     <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+      <img alt="Movie 6 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/H1YZdzm4U7YBMBoypkLr9exIeI2TALApAgSzWoRWm1k0JvxTA.jpg" width="300"/>
+      <img alt="Movie 7 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/NmytzicreaWtLS8VOSbkhcUkw6EtqbMKZKyC5eSuNuSyJvxTA.jpg" width="300"/>
+      <img alt="Movie 8 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/CDHNMLuWqnJEJJVWNyk8FyNLFM6eHaHlfqvzreWR1DVJTeGPB.jpg" width="300"/>
+      <img alt="Movie 9 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/Cu7ir3CUEAotLNrUo6lpBWoqwSmSQjCePjUrmnJKunk1k34JA.jpg" width="300"/>
+      <img alt="Movie 10 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/3XvPVG2V0uZUFlWlt97a1Yafc1IyYSZ0BMCq8Em3FFj2k34JA.jpg" width="300"/>
+     </div>
+    </div>
+    <!-- Row 3 -->
+    <div>
+     <h2 class="text-2xl font-bold mb-4">
+      New Releases
+     </h2>
+     <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+      <img alt="Movie 11 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/ueHguAhghhREfE8sbcorgPCIc7cewFEecCX2dpQhA4EfN5NeE.jpg" width="300"/>
+      <img alt="Movie 12 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/rkenhxmA1aWaTCSGPy4VzPTScSnnUWUzYchpbR9WntfwJvxTA.jpg" width="300"/>
+      <img alt="Movie 13 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/RjxkU2tlJW7vHxz5Gt4mFxOWrh0HAeQ2mZesKspc06jhJvxTA.jpg" width="300"/>
+      <img alt="Movie 14 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/IVeIiNfKxMoNrkAI9xa2qLZfWG9okI1C59Sz7nVf6sJYm8GPB.jpg" width="300"/>
+      <img alt="Movie 15 Poster" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/Y9BKBKjxCoIOAhRSZwu8nbfnb4jbiMYE3KkIiGvdmF1zk34JA.jpg" width="300"/>
+     </div>
+    </div>
+   </section>
+  </main>
+ </body>
+</html>
